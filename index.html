@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Programming World</title>
+</head>
+
+<body>
+
+    <h1>Welcome to the Programming World</h1>
+    <p>Programming is the process of creating a set of instructions that tell a computer how to perform a task. It is
+        the heart of modern technology.</p>
+
+    <hr>
+    <!-- Image with Image Map -->
+    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+         alt="Technology Areas" 
+         usemap="#techmap"
+         width="600"
+         height="400">
+    
+    <!-- Image Map Definition -->
+    <map name="techmap">
+        <area shape="rect" coords="50,50,200,150" href="https://en.wikipedia.org/wiki/Web_development" target="_blank" alt="Web Development" title="Web Development">
+        <area shape="circle" coords="350,120,60" href="https://en.wikipedia.org/wiki/Machine_learning" target="_blank" alt="Machine Learning" title="Machine Learning">
+        <area shape="rect" coords="250,200,400,300" href="https://en.wikipedia.org/wiki/Mobile_app_development" target="_blank" alt="Mobile Development" title="Mobile Development">
+    </map>
+    
+    <p>Click on the highlighted areas to learn about each technology.</p>
+
+    <hr>
+
+    <!-- Table -->
+    <h2>Popular Programming Languages</h2>
+    <table border="2">
+        <caption>Top Languages in 2025</caption>
+        <tr>
+            <th>Rank</th>
+            <th>Language</th>
+            <th>Use Case</th>
+            <th>Difficulty</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Python</td>
+            <td>AI, Web, Automation</td>
+            <td>Easy</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>JavaScript</td>
+            <td>Web Front-End</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Java</td>
+            <td>Mobile Apps</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>C++</td>
+            <td>Game Development</td>
+            <td>Hard</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <!-- Audio -->
+    <h2>Programming Podcast</h2>
+    <audio controls loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        <p>Your browser does not support the audio element.</p>
+    </audio>
+
+    <hr>
+
+    <!-- Video -->
+    <h2>Programming Intro Video</h2>
+    <video width="640" height="360" controls poster="https://i.ytimg.com/vi/Z1Yd7upQsXY/maxresdefault.jpg">
+        <source src="Videw/m.mp4" type="video/mp4">
+        <p>Your browser does not support the video tag.</p>
+    </video>
+
+    <hr>
+
+    <!-- iframe -->
+    <h2>Google Maps Location: Silicon Valley</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.0839489331884!2d-122.08424948468118!3d37.42199977982557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02c7890b07%3A0xa240c8c75d8b7a79!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633874840198!5m2!1sen!2sus"
+        width="600" height="450" style="border:1px solid black;" allowfullscreen="" loading="lazy"></iframe>
+
+    <hr>
+
+    <!-- Form -->
+    <h2>Join the Programming Course</h2>
+    <form action="submit.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Registration Form</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="10" max="100" required><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label><br><br>
+
+            <label for="photo">Upload Your Photo:</label><br>
+            <input type="file" id="photo" name="photo"><br><br>
+
+            <label for="edu">Education Level:</label><br>
+            <input list="edu_levels" id="edu" name="edu">
+            <datalist id="edu_levels">
+                <option value="High School">
+                <option value="Diploma">
+                <option value="Bachelor's">
+                <option value="Master's">
+                <option value="Ph.D.">
+            </datalist><br><br>
+
+            <label for="grad_year">Graduation Year:</label><br>
+            <select id="grad_year" name="grad_year">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select><br><br>
+
+            <label for="fav_color">Favorite Color:</label><br>
+            <input type="color" id="fav_color" name="fav_color"><br><br>
+
+            <b>Programming Languages Known:</b><br>
+            <input type="checkbox" id="lang1" name="languages" value="Python">
+            <label for="lang1">Python</label><br>
+            <input type="checkbox" id="lang2" name="languages" value="JavaScript">
+            <label for="lang2">JavaScript</label><br>
+            <input type="checkbox" id="lang3" name="languages" value="C++">
+            <label for="lang3">C++</label><br>
+            <input type="checkbox" id="lang4" name="languages" value="Java">
+            <label for="lang4">Java</label><br>
+            <input type="checkbox" id="lang5" name="languages" value="Dart">
+            <label for="lang5">Dart</label><br><br>
+
+            <label>Preferred Time:</label><br>
+            <input type="radio" id="morning" name="time" value="Morning" checked>
+            <label for="morning">Morning</label>
+            <input type="radio" id="evening" name="time" value="Evening">
+            <label for="evening">Evening</label><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="6" cols="50"
+                placeholder="Why do you want to join this course?"></textarea><br><br>
+
+            <input type="submit" value="Register">
+            <input type="reset" value="Cancel">
+            <button type="button">Preview</button>
+            <button type="button">Print</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 - All rights reserved. This HTML file was built for educational purposes by ENG.BASSEM .</p>
+    </footer>
+
+</body>
+
+</html>
